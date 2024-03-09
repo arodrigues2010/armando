@@ -29,8 +29,7 @@ public class IPriceServiceImpl implements IPriceService {
     public void insertPrice() {
     
     if (priceRepository.count() > 0) {
-        System.out.println("La tabla de precios ya contiene registros, no se insertarán nuevos registros.");
-        return;
+           return;
     }
     
     // Crear una lista para almacenar los nuevos registros
