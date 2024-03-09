@@ -24,7 +24,6 @@ public class PriceResource {
 
     @GetMapping("/price")
     public ResponseEntity<List<Price>> getPrice(
-            @RequestParam("startDate") @DateTimeFormat(pattern = "yyyy-MM-dd-HH.mm.ss") Date startDate,
             @RequestParam("productId") Long productId,
             @RequestParam("brandId") Long brandId) {
 

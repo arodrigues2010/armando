@@ -2,7 +2,6 @@ package com.armando.price.spring.repository;
 
 import com.armando.price.spring.entities.Price;
 
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
