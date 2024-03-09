@@ -36,10 +36,10 @@ public class IPriceServiceImpl implements IPriceService {
     List<Price> prices = new ArrayList<>();
 
     // Agregar cada objeto Price a la lista
-    prices.add(createPrice(1L, new Date(120, 5 - 1, 14, 0, 0,0), new Date(120, 12 - 1, 31, 23, 59,59), 35455L, 0, 35.50, "EUR"));
-    prices.add(createPrice(1L, new Date(120, 6 - 1, 14, 15, 0,0), new Date(120, 6 - 1, 14, 18, 30,0), 35455L, 1, 25.45, "EUR"));
-    prices.add(createPrice(1L, new Date(120, 6 - 1, 15, 0, 0,0), new Date(120, 6 - 1, 15, 11, 0,0), 35455L, 1, 30.50, "EUR"));
-    prices.add(createPrice(1L, new Date(120, 6 - 1, 15, 16, 0,0), new Date(120, 12 - 1, 31, 23, 59,59), 35455L, 1, 38.95, "EUR"));
+    prices.add(createPrice(1L, new Date(120, 6, 14, 0, 0,0), new Date(120, 12, 31, 23, 59,59), 35455L, 0, 35.50, "EUR"));
+    prices.add(createPrice(1L, new Date(120, 6, 14, 15, 0,0), new Date(120, 6, 14, 18, 30,0), 35455L, 1, 25.45, "EUR"));
+    prices.add(createPrice(1L, new Date(120, 6, 15, 0, 0,0), new Date(120, 6, 15, 11, 0,0), 35455L, 1, 30.50, "EUR"));
+    prices.add(createPrice(1L, new Date(120, 6, 15, 16, 0,0), new Date(120, 12, 31, 23, 59,59), 35455L, 1, 38.95, "EUR"));
 
     try {
         
