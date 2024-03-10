@@ -1,7 +1,9 @@
 package com.armando.price.spring.entities;
 
 
+import java.time.LocalDateTime;
 import java.util.Date;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,7 +20,7 @@ public class Price {
     private Long id; 
     private Long brandId;
     private Long productId;
-    private Date startDate;
+    private LocalDateTime startDate;
     private Date endDate;
     private Double price;
     private String currency;
@@ -40,11 +42,11 @@ public class Price {
         this.productId = productId;
     }
 
-    public Date getStartDate() {
+    public LocalDateTime getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(LocalDateTime startDate) {
         this.startDate = startDate;
     }
 
