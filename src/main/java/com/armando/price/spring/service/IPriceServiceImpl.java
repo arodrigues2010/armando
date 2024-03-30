@@ -52,9 +52,9 @@ public class IPriceServiceImpl implements IPriceService {
         System.out.println("error " + e.getMessage());
     }
 
-    long countAfterInsertion = priceRepository.count();
-    System.out.println("Número total de registros : " + countAfterInsertion);
-}
+        long countAfterInsertion = priceRepository.count();
+        System.out.println("Número total de registros : " + countAfterInsertion);
+    }
 
     public static LocalDateTime parseDate(String dateString) {
         // Definir un patrón de formato para la cadena de fecha y hora
@@ -63,6 +63,7 @@ public class IPriceServiceImpl implements IPriceService {
         // Parsear la cadena de fecha y hora al formato especificado
         return LocalDateTime.parse(dateString, formatter);
     }
+    
      private Price createPrice(Long brandId, LocalDateTime startDate, Date endDate, Long productId, int priority, double price, String currency) {
          Price priceObj = new Price();
          priceObj.setBrandId(brandId);

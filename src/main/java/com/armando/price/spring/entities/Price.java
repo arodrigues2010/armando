@@ -1,9 +1,7 @@
 package com.armando.price.spring.entities;
 
-
 import java.time.LocalDateTime;
 import java.util.Date;
-
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +12,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Price")
 public class Price {
+    
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 

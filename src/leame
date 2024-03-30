@@ -1,0 +1,6 @@
+docker run --hostname=c749bbc0126d --mac-address=02:42:ac:11:00:02 
+--env=JAVA_HOME=/opt/java/openjdk 
+--env=PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin 
+--env=LANG=en_US.UTF-8 --env=LANGUAGE=en_US:en --env=LC_ALL=en_US.UTF-8 
+--env=JAVA_VERSION=jdk-11.0.11+9 -p 8080:8080 
+--restart=no --runtime=runc -d inditex:v2

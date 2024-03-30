@@ -1,6 +1,5 @@
 package com.armando.price.spring.service;
 
-import java.util.Date;
 import java.util.List;
 
 import com.armando.price.spring.entities.Price;
