@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 
 public interface PriceRepository extends JpaRepository<Price, Long> {
-    List<Price> findByProductIdAndBrandId( Long productId, Long brandId);
+    List<Price> findByProductIdAndBrandId( long productId, long brandId);
 }

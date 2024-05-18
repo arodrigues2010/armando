@@ -24,8 +24,8 @@ public class PriceResource {
 
     @GetMapping("/price")
     public ResponseEntity<List<Price>> getPrice(
-            @RequestParam("productId") Long productId,
-            @RequestParam("brandId") Long brandId) {
+            @RequestParam("productId") long productId,
+            @RequestParam("brandId") long brandId) {
 
         List<Price> prices = priceService.getPrice( productId, brandId);
         if (prices.isEmpty()) {

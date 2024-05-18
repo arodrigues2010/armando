@@ -6,5 +6,5 @@ import com.armando.price.spring.entities.Price;
 
 
 public interface IPriceService {
-     List<Price> getPrice(Long productId, Long brandId);
+     List<Price> getPrice(long i, long j);
 }

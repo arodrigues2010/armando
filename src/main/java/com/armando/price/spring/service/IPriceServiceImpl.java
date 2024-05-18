@@ -22,7 +22,7 @@ public class IPriceServiceImpl implements IPriceService {
     private PriceRepository priceRepository;
 
     @Override
-    public List<Price> getPrice(Long productId, Long brandId) {
+    public List<Price> getPrice(long productId, long brandId) {
         this.insertPrice();
         return priceRepository.findByProductIdAndBrandId(productId, brandId);
     }
